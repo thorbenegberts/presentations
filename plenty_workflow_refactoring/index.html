@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>plentymarkets Workflow Refactoring</title>
+
+		<meta name="description" content="plentymarkets Workflow Refactoring">
+		<meta name="author" content="Thorben Egberts">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../lib/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../lib/reveal.js/css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../lib/reveal.js/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = '../lib/reveal.js/css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>plentymarkets Workflow Refactoring</h1>
+				</section>
+
+				<section>
+					<section>
+						<h2>Ist-Zustand:</h2>
+						<img src="PHPUndGWTLangsam.png">
+					</section>
+
+					<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+
+					<section>
+						<h2>Was kann verbessert werden?</h2>
+					</section>
+
+					<section>
+						<h2>Weniger "Trichter"</h2>
+						<h3>... es sind Flaschenhälse, die uns bremsen</h3>
+						<img height="500px" src="LessFunnelsSmall.png">
+					</section>
+
+					<section>
+						<h2>Weniger "Hüte"</h2>
+						<h3>... reduziert den Kommunikations-Overhead</h3>
+						<img height="500px" src="LessHatsSmall.png">
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h2>Pro & Contra</h2>
+					</section>
+
+					<section>
+						<h2>Pro</h2>
+						<h3>Was ist besser?</h3>
+						<ul>
+							<li>Alles aus <u>einer</u> Hand: Modell-Planung & UI-Entwurf</li>
+							<li>Weniger Overhead bei <u>Planung</u></li>
+							<li>Weniger Overhead bei <u>Kommunikation</u> während des Projekts</li>
+							<li>Schnellere <u>Entscheidungen</u></li>
+							<li>Weniger <u>Fehler und Missverständnisse</u> zwischen UI und Model</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Contra</h2>
+						<h3>Was würde uns herausfordern?</h3>
+						<ul>
+							<li><u>Einheitlichkeit</u> der UI muss erhalten bleiben
+								<p>
+									<ul>
+										<li>→ Ich liefere einen 'Styleguide'</li>
+										<li>→ Ich leiste gerne Hilfe</li>
+										<li><u>Wichtig:</u> Wir brauchen keine finalen Design-Entwürfe, sondern nur "Mockups"!</li>
+									</ul>
+								</p>
+							</li>
+							<li><u>Mehraufwand</u> für UI-Entwürfe muss eingerechnet werden
+								<p>
+									<ul>
+										<li>→ Nicht jedes Projekt benötigt <u>wirklich</u> einen UI-Entwurf</li>
+										<li>→ Arbeit mit Balsamiq Mockups ist effizient und schnell erlernt (Drag & Drop)</li>
+										<li>→ Ich stelle euch eine zusätzliche Widget-Library bereit!</li>
+									</ul>
+								</p>
+							</li>
+						</ul>
+					</section>
+
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="../lib/reveal.js/lib/js/head.min.js"></script>
+		<script src="../lib/reveal.js/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../lib/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../lib/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
