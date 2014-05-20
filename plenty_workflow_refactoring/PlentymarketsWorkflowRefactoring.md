@@ -55,34 +55,43 @@
 
 
 
-#Verteilung der UI-Ressourcen
-##Weil ich Ostfriese bin ...
-###Eine maritime Metapher :-)
+#UI-Ressourcen verteilen
+##Weil ich Ostfriese bin: Eine "maritime" Metapher :-)
 
 
 ##Im Hafen:
-###Kapitäne suchen Matrosen
+###Kapitäne suchen Matrosen für ihr Schiff
 ![.]()
 
 
-## Push-System =
-![.](traffic.gif)
+## Das ist ein "Push-System" ...
 
+
+## Push-System =
+![.](jB10Q4F.gif)
+![.](traffic.gif)
+![.](PMJYz8t.gif)
 ![.](wtf.gif)
 
 
 ##Noch mal im Hafen:
-### Matrosen suchen sich ihre Kapitäne
+### Matrosen suchen sich ihre Schiffe selbst
 ![.]()
 
 
-## <u>Pull</u>-System =
-![.](nice.gif)
+## ... das ist ein "Pull-System".
 
 
-##Was hat das mit plentymarkets zu tun?!
+## Pull-System =
+![.](DoughMade.gif)
+![.](IceCreamSandwichesMade.gif)
+![.](Vn6NGKh.gif)
+![.](aWZpOj3_460sa.gif)
+
+
 ![.](thefuckyousay.gif)
+##Was hat das mit plentymarkets zu tun?!
 
 
-##So könnte das bei uns konkret aussehen:
+##Konkret das:
 ![.]()
