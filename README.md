@@ -1,4 +1,4 @@
-presentations
+Presentations
 =============
 
-Repository of my presentations
+Repository of my presentations.
