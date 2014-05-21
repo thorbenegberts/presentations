@@ -30,33 +30,41 @@
 
 
 ##Pro
-###Was ist besser?
+---
+####Verantwortung ist klar
 - "End-to-End Responsibility"
 - Alles aus <u>einer</u> Hand: Modell-Planung & UI-Entwurf
-- Weniger Overhead bei <u>Planung</u>
-- Weniger Overhead bei <u>Kommunikation</u> während des Projekts
-- Schnellere <u>Entscheidungen</u></li>
-- Weniger <u>Fehler und Missverständnisse</u> zwischen UI und Model
+---
+####Vieles wird einfacher
+- Weniger Overhead für <u>Planung</u>
+- Weniger Overhead für <u>Kommunikation</u>
+- Schnelle <u>Entscheidungen</u></li>
+- Weniger <u>Fehler</u> und <u>Missverständnisse</u> bei Planung, Entwicklung & Test
 - Vereinfachung für QA & Support: <strike>"GWT oder PHP Bug?!"</strike> Feature XY Bug!
 
 
 ##Contra
-###Was könnte uns herausfordern?
-- <u>Einheitlichkeit der UI</u> muss erhalten bleiben
- - → Ich liefere einen "Styleguide"
- - → Ich leiste gerne Hilfe
- - <u>Wichtig:</u> Wir brauchen keine finalen Design-Entwürfe, sondern nur "Mockups"!
-- <u>Mehraufwand für UI-Entwürfe</u> muss eingerechnet werden
- - → Nicht jedes Projekt benötigt <u>wirklich</u> einen UI-Entwurf
- - → Arbeit mit Balsamiq Mockups ist effizient und schnell erlernt (Drag & Drop)
- - → Ich stelle euch eine zusätzliche Widget-Library bereit!
-- <u>Verteilung<u/> der UI-Ressourcen
- - → Hier liefere ich euch gleich eine Lösung :-)
+---
+####Einheitlichkeit der UI muss erhalten bleiben
+- Ich liefere einen <u>Styleguide</u>
+- Ich leiste gerne <u>Hilfe</u>
+- Wichtig: <u>Pragmatisch</u> sein. Wir brauchen keine finalen Designs, sondern nur Mockups!
+---
+####Belastung der PHP-PLs
+- Nicht jedes Projekt benötigt <u>wirklich</u> einen UI-Entwurf
+- Arbeit mit Balsamiq Mockups ist leicht erlernt und effizient
+- Ich stelle euch eine zusätzliche Widget-Library bereit!
+---
+####Verteilung der UI-Ressourcen
+Hier liefere ich euch gleich eine Lösung :-)
 
 
 
 #UI-Ressourcen verteilen
-##Weil ich Ostfriese bin: Eine "maritime" Metapher :-)
+
+
+##Eine "maritime Metapher"
+##(weil ich Ostfriese bin)
 
 
 ##Im Hafen:
