@@ -2,7 +2,7 @@
 
 
 
-##Ist-Zustand:
+##So sieht's aus:
 ![.](PHPUndGWTLangsam.png)
 
 
@@ -22,7 +22,7 @@
 
 
 ##So könnte es gehen:
-![.](PHPUndGWTLangsam.png)
+![.](PHPundGWTschnell.png)
 
 
 
