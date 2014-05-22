@@ -69,7 +69,7 @@ Hier liefere ich euch gleich eine Lösung :-)
 
 ##Im Hafen:
 ###Kapitäne suchen Matrosen für ihr Schiff
-![.]()
+![.](HafenSmall.png)
 
 
 ## Das ist ein "Push-System" ...
@@ -82,9 +82,16 @@ Hier liefere ich euch gleich eine Lösung :-)
 ![.](wtf.gif)
 
 
-##Noch mal im Hafen:
-### Matrosen suchen sich ihre Schiffe selbst
-![.]()
+##Alternative?
+
+
+##Die "Matrosen-Börse"
+![.](MatrosenBoardSmall.png)
+
+
+##Wieder im Hafen:
+### Die Matrosen suchen sich ihre Schiffe selbst
+![.](HafenPullSystemSmall.png)
 
 
 ## ... das ist ein "Pull-System".
@@ -97,9 +104,17 @@ Hier liefere ich euch gleich eine Lösung :-)
 ![.](aWZpOj3_460sa.gif)
 
 
+##Was hat das mit uns zu tun?!
 ![.](thefuckyousay.gif)
-##Was hat das mit plentymarkets zu tun?!
 
 
-##Konkret das:
-![.]()
+##Konkret kann das so aussehen:
+![.](AnheuernBoardSmall.png)
+
+
+##Projekt-Post-It
+![.](ProjectPostItSmall.png)
+
+- Ein Post-It pro benötigtem UI-Entwickler
+- Board hängt neben dem GWT-Board. Übersicht bleibt erhalten!
+- Mehrbedarf? Hänge ein Post-It dazu!
