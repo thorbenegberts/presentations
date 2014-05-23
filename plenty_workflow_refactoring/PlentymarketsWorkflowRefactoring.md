@@ -1,41 +1,41 @@
-#Workflow Refactoring
+# Workflow Refactoring
 
 
 
-##So sieht's aus:
+## So sieht's aus:
 ![.](PHPUndGWTLangsam.png)
 
 
 
-##Was kann verbessert werden?
+## Was kann verbessert werden?
 
 
-##Weniger "Trichter"
-###... es sind Flaschenhälse, die uns bremsen
+## Weniger "Trichter"
+### ... es sind Flaschenhälse, die uns bremsen
 ![.](LessFunnelsSmaller.png)
 
 
-##Weniger "Hüte"
-###... reduziert den Kommunikations-Overhead
+## Weniger "Hüte"
+### ... reduziert den Kommunikations-Overhead
 ![.](LessHatsSmaller.png)
 
 
 
-##So könnte es gehen:
+## So könnte es gehen:
 ![.](PHPundGWTschnell.png)
 
 
 
-##Pro & Contra
+## Pro & Contra
 
 
-##Pro
+## Pro
 ---
-####Verantwortung ist klar
+#### Verantwortung ist klar
 - "End-to-End Responsibility"
 - Alles aus <u>einer</u> Hand: Modell-Planung & UI-Entwurf
 ---
-####Vieles wird einfacher
+#### Vieles wird einfacher
 - Weniger Overhead für <u>Planung</u>
 - Weniger Overhead für <u>Kommunikation</u>
 - Schnelle <u>Entscheidungen</u></li>
@@ -43,7 +43,7 @@
 - Vereinfachung für QA & Support: <strike>"GWT oder PHP Bug?!"</strike> Feature XY Bug!
 
 
-##Contra
+## Contra
 ---
 ####Einheitlichkeit der UI muss erhalten bleiben
 - Ich liefere einen <u>Styleguide</u>
@@ -60,11 +60,11 @@ Hier liefere ich euch gleich eine Lösung :-)
 
 
 
-#UI-Ressourcen verteilen
+# UI-Ressourcen verteilen
 
 
-##Eine "maritime Metapher"
-##(weil ich Ostfriese bin)
+## Eine "maritime Metapher"
+## (weil ich Ostfriese bin)
 
 
 ##Im Hafen:
@@ -82,14 +82,14 @@ Hier liefere ich euch gleich eine Lösung :-)
 ![.](wtf.gif)
 
 
-##Alternative?
+## Alternative?
 
 
-##Die "Matrosen-Börse"
+## Die "Matrosen-Börse"
 ![.](MatrosenBoardSmall.png)
 
 
-##Wieder im Hafen:
+## Wieder im Hafen:
 ### Die Matrosen suchen sich ihre Schiffe selbst
 ![.](HafenPullSystemSmall.png)
 
@@ -104,15 +104,15 @@ Hier liefere ich euch gleich eine Lösung :-)
 ![.](aWZpOj3_460sa.gif)
 
 
-##Was hat das mit uns zu tun?!
+## Was hat das mit uns zu tun?!
 ![.](thefuckyousay.gif)
 
 
-##Konkret kann das so aussehen:
+## Konkret kann das so aussehen:
 ![.](AnheuernBoardSmall.png)
 
 
-##Projekt-Post-It
+## Projekt-Post-It
 ![.](ProjectPostItSmall.png)
 
 - Ein Post-It pro benötigtem UI-Entwickler
