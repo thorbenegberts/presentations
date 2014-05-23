@@ -142,6 +142,7 @@ Kontinuierliche GWT-interne Verbesserung
 - Regelmäßige "Internal Unconferences"
 
 
+
 # Wie verteilen wir die GWT-Entwickler auf die Projekt-Teams?
 ## Eine "maritime Metapher"
 ### (weil ich Ostfriese bin)
