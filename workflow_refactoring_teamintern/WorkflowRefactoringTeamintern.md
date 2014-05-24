@@ -84,14 +84,29 @@ Hier ändert sich einiges!
 // TODO Bild von einem Cross-funktionalem Team, GWT/PHP/Client, dem Projektleiter (Pfeil: Was?), dem GWT-Leiter (Pfeil: Wie?)
 
 
-- Mehr Zusammenarbeit
-- Gräben zuschütten
-- Weniger "die" und "wir, mehr "wir"
+Mehr Zusammenarbeit zwischen PHP / GWT / Client
+
+Weniger herumfragen nach Informationen
+
+Direkte Entscheidungen
+
+Gemeinsam lernen durch Retrospektiven
+
+---
+
+Gräben zuschütten
+
+Weniger "die" und "wir", mehr "gemeinsam"
 
 
 # ☠ GWT must die ☠
 ## Wir brauchen ein neues Selbstverständnis
-- "GWT-Gilde" — Die Spezialisten ihres Handwerks
+
+
+## Die "GWT-Gilde"
+### Die Spezialisten ihres Handwerks
+![](GWTHipsterLogo2Small.png)
+
 - Helfer für die Teams
 - Variable Verteilung auf die Projekt-Teams, je nach Bedarf
 
@@ -101,6 +116,23 @@ Hier ändert sich einiges!
 
 # GWT lebt
 ![.](1up.png)
+## Aber was hält uns zusammen?
+
+
+# Blog
+Neuerungen und Änderungen an der GWT-Codebasis kommunizieren!
+
+// TODO Bild von einem Megaphon
+
+
+# Confluence
+- Wissen dauerhaft festhalten und pflegen.
+- Anleitungen, Best Practices, Guidelines ...
+
+// Bild von einem Eimer, in den Ideen fallen
+// Oder mehrerer Bahnen, die in eine Verlaufen und in den Eimer fallen
+
+// Auf dem Eimer könnte das Confluence-Logo stehen, wenn nicht zu kompliziert
 
 
 # Styleguide
@@ -109,22 +141,8 @@ Jeder von uns kann und soll daran mitwirken!
 // TODO Bild von einem Heft wo "Styleguide" oder "Manual" drauf steht
 
 
-# Blog
-Ankündigung von Neuerungen und Änderungen an der GWT-Codebasis
-
-// TODO Bild von einem Megaphon
-
-
-# Confluence
-Wissen langfristig festhalten und pflegen
-
-// Bild von einem Eimer, in den Ideen fallen
-// Oder mehrerer Bahnen, die in eine Verlaufen und in den Eimer fallen
-// Auf dem Eimer könnte das Confluence-Logo stehen, wenn nicht zu kompliziert
-
-
 # Retrospektiven
-Kontinuierliche GWT-interne Verbesserung
+Kontinuierliche GWT-interne Verbesserung.
 
 // TODO Bild vom continuous improvement cycle
 
