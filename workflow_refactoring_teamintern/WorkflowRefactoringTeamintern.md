@@ -138,27 +138,25 @@ Hier ändert sich einiges ... zum Guten
 <blockquote>Wir organisieren die Entwickler nicht mehr um Technologien, sondern um Projekte.</blockquote>
 
 
-// TODO Bild von einem Cross-funktionalem Team, GWT/PHP/Client, dem Projektleiter (Pfeil: Was?), dem GWT-Leiter (Pfeil: Wie?)
+![](GWTGildeSmall.png)
 
 
-Weniger herumfragen nach Informationen und direkte Entscheidungen.
+Weniger herumfragen nach Informationen.
 
-// TODO Bild
+Direkte Entscheidungen.
 
 
 Mehr Zusammenarbeit zwischen PHP, GWT & Client.
 
-// TODO Bild
-
 
 Gemeinsam lernen durch projektbezogene Retrospektiven.
 
-// TODO Bild
 
+Nach und nach die Gräben zuschütten.
 
-Nach und nach die Gräben zuschütten: Weniger "die" und "wir", mehr "gemeinsam".
+Weniger "die" und "wir", mehr "gemeinsam".
 
-// TODO Bild
+![](TeamsInLoveSmall.png)
 
 
 
@@ -169,9 +167,6 @@ Nach und nach die Gräben zuschütten: Weniger "die" und "wir", mehr "gemeinsam"
 ![](GWTHipsterLogo2Small.png)
 # Die "GWT-Gilde"
 ### Die Spezialisten ihres Handwerks
-
-
-// TODO Bild von der Organisationsmatrix mit PHP-Teams, PLs, GWT-Gilde und mir
 
 
 # How to keep in touch?
