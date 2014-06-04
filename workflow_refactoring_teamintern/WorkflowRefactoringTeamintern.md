@@ -26,7 +26,7 @@
 
 
 
-## Pro & Contra
+# Pro & Contra
 
 
 ## Pro
@@ -55,99 +55,7 @@
 - Ich stelle eine zusätzliche Widget-Library bereit!
 ---
 ####Verteilung der UI-Ressourcen
-Hier liefere ich euch gleich eine Lösung :-)
-
-
-
-# Die "Transition"
-## Vieles bleibt beim Alten!
-- Alle PHP-Teams bleiben bestehen
-- Client-Team bleibt bestehen
-- GWT-Team bleibt bestehen
-- Keine personellen Veränderungen
-
-
-## <u>GWT-interne</u> Projekte und Tickets gibt es weiterhin
-GWT-Board & Workflow bleiben bestehen
-
-
-## Bei <u>teamübergreifenden</u> Projekten sieht das anders aus
-Hier ändert sich einiges ... zum Guten
-
-
-# Cross-funktionale Teams
-<blockquote>Wir organisieren die Entwickler nicht mehr um Technologien, sondern um Projekte.</blockquote>
-
-
-// TODO Bild von einem Cross-funktionalem Team, GWT/PHP/Client, dem Projektleiter (Pfeil: Was?), dem GWT-Leiter (Pfeil: Wie?)
-
-
-Weniger herumfragen nach Informationen und direkte Entscheidungen.
-
-// TODO Bild
-
-
-Mehr Zusammenarbeit zwischen PHP, GWT & Client.
-
-// TODO Bild
-
-
-Gemeinsam lernen durch projektbezogene Retrospektiven.
-
-// TODO Bild
-
-
-Nach und nach die Gräben zuschütten: Weniger "die" und "wir", mehr "gemeinsam".
-
-// TODO Bild
-
-
-
-# Die Konsequenzen
-
-
-# ☠ GWT must die ☠
-## Wir brauchen ein neues Selbstverständnis
-
-
-## Die "GWT-Gilde"
-### Die Spezialisten ihres Handwerks
-![](GWTHipsterLogo2Small.png)
-
-
-// TODO Bild von der Organisationsmatrix
-
-
-# GWT lebt
-![.](1up.png)
-## Aber was hält uns zusammen?
-
-
-# Blog
-Neuerungen und Änderungen an der GWT-Codebasis kommunizieren!
-
-// TODO Bild von einem Megaphon
-
-
-# Styleguide
-Jeder von uns kann und soll daran mitwirken!
-
-// TODO Bild von einem Heft wo "Styleguide" oder "Manual" drauf steht
-
-
-# Code Reviews
-
-Jeder review't jeden Code, so wie jetzt.
-
-(Unabhängig vom Projekt, an dem er arbeitet)
-
-// TODO Bild
-
-
-# Retrospektiven
-Kontinuierliche Verbesserung, neben den Projekt-Retrospektiven.
-
-// TODO Bild vom continuous improvement cycle
+Hier liefere ich euch jetzt eine Lösung :-)
 
 
 
@@ -207,6 +115,96 @@ Kontinuierliche Verbesserung, neben den Projekt-Retrospektiven.
 - Ein Post-It pro benötigtem UI-Entwickler
 - Board hängt neben dem GWT-Board. Übersicht bleibt erhalten!
 - Mehrbedarf? Hänge ein Post-It dazu!
+
+
+
+# Die "Transition"
+## Vieles bleibt beim Alten!
+- Alle PHP-Teams bleiben bestehen
+- Client-Team bleibt bestehen
+- GWT-Team bleibt bestehen
+- Keine personellen Veränderungen
+
+
+## <u>GWT-interne</u> Projekte und Tickets gibt es weiterhin
+GWT-Board & Workflow bleiben bestehen
+
+
+## Bei <u>teamübergreifenden</u> Projekten sieht das anders aus
+Hier ändert sich einiges ... zum Guten
+
+
+# Cross-funktionale Teams
+<blockquote>Wir organisieren die Entwickler nicht mehr um Technologien, sondern um Projekte.</blockquote>
+
+
+// TODO Bild von einem Cross-funktionalem Team, GWT/PHP/Client, dem Projektleiter (Pfeil: Was?), dem GWT-Leiter (Pfeil: Wie?)
+
+
+Weniger herumfragen nach Informationen und direkte Entscheidungen.
+
+// TODO Bild
+
+
+Mehr Zusammenarbeit zwischen PHP, GWT & Client.
+
+// TODO Bild
+
+
+Gemeinsam lernen durch projektbezogene Retrospektiven.
+
+// TODO Bild
+
+
+Nach und nach die Gräben zuschütten: Weniger "die" und "wir", mehr "gemeinsam".
+
+// TODO Bild
+
+
+
+# Was wird aus dem guten alten GWT-Team?
+
+
+## Ein neues Selbstverständnis
+![](GWTHipsterLogo2Small.png)
+# Die "GWT-Gilde"
+### Die Spezialisten ihres Handwerks
+
+
+// TODO Bild von der Organisationsmatrix mit PHP-Teams, PLs, GWT-Gilde und mir
+
+
+# How to keep in touch?
+Informationen, neue Funktionen, Code-Änderungen, Best Practices, Probleme, Verbesserungen, ...
+
+usw.
+
+
+# Blog
+Neuerungen und Änderungen an der GWT-Codebasis kommunizieren!
+
+// TODO Bild von einem Megaphon
+
+
+# Styleguide
+Jeder von uns kann und soll daran mitwirken!
+
+// TODO Bild von einem Heft wo "Styleguide" oder "Manual" drauf steht
+
+
+# Code Reviews
+
+Jeder review't jeden Code, so wie jetzt.
+
+(Unabhängig vom Projekt, an dem er arbeitet)
+
+// TODO Bild
+
+
+# Retrospektiven
+Kontinuierliche Verbesserung, neben den Projekt-Retrospektiven.
+
+// TODO Bild vom continuous improvement cycle
 
 
 
