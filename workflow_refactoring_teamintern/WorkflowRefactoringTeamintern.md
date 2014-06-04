@@ -45,22 +45,21 @@
 
 ## Contra
 ---
-####Einheitlichkeit der UI muss erhalten bleiben
+####Einheitlichkeit der UI muss erhalten bleiben, aber ...
 - Ich liefere einen <u>Styleguide</u>
-- Ich leiste gerne <u>Hilfe</u>
-- Wichtig: <u>Pragmatisch</u> sein. Wir brauchen keine finalen Designs, sondern nur Mockups!
+- Ich leiste gerne <u>Hilfe</u> bei den UI-Entwürfen.<br>Wichtig: Wir brauchen keine finalen Designs, sondern nur Mockups!
 ---
-####Belastung der PHP-PLs
+####PHP-PLs werden mehr belastet, aber ...
 - Nicht jedes Projekt benötigt <u>wirklich</u> einen UI-Entwurf
-- Arbeit mit Balsamiq Mockups ist leicht erlernt und effizient
-- Ich stelle euch eine zusätzliche Widget-Library bereit!
+- Arbeit mit "Balsamiq Mockups" ist leicht erlernt und effizient
+- Ich stelle eine zusätzliche Widget-Library bereit!
 ---
 ####Verteilung der UI-Ressourcen
 Hier liefere ich euch gleich eine Lösung :-)
 
 
 
-# Transition
+# Die "Transition"
 ## Vieles bleibt beim Alten!
 - Alle PHP-Teams bleiben bestehen
 - Client-Team bleibt bestehen
@@ -71,32 +70,40 @@ Hier liefere ich euch gleich eine Lösung :-)
 ## <u>GWT-interne</u> Projekte und Tickets gibt es weiterhin
 GWT-Board & Workflow bleiben bestehen
 
----
 
 ## Bei <u>teamübergreifenden</u> Projekten sieht das anders aus
-Hier ändert sich einiges!
+Hier ändert sich einiges ... zum Guten
 
 
 # Cross-funktionale Teams
-<blockquote>Wir organisieren die Menschen nicht mehr um Technologien, sondern um Projekte.</blockquote>
+<blockquote>Wir organisieren die Entwickler nicht mehr um Technologien, sondern um Projekte.</blockquote>
 
 
 // TODO Bild von einem Cross-funktionalem Team, GWT/PHP/Client, dem Projektleiter (Pfeil: Was?), dem GWT-Leiter (Pfeil: Wie?)
 
 
-Mehr Zusammenarbeit zwischen PHP / GWT / Client
+Weniger herumfragen nach Informationen und direkte Entscheidungen.
 
-Weniger herumfragen nach Informationen
+// TODO Bild
 
-Direkte Entscheidungen
 
-Gemeinsam lernen durch Retrospektiven
+Mehr Zusammenarbeit zwischen PHP, GWT & Client.
 
----
+// TODO Bild
 
-Gräben zuschütten
 
-Weniger "die" und "wir", mehr "gemeinsam"
+Gemeinsam lernen durch projektbezogene Retrospektiven.
+
+// TODO Bild
+
+
+Nach und nach die Gräben zuschütten: Weniger "die" und "wir", mehr "gemeinsam".
+
+// TODO Bild
+
+
+
+# Die Konsequenzen
 
 
 # ☠ GWT must die ☠
@@ -106,9 +113,6 @@ Weniger "die" und "wir", mehr "gemeinsam"
 ## Die "GWT-Gilde"
 ### Die Spezialisten ihres Handwerks
 ![](GWTHipsterLogo2Small.png)
-
-- Helfer für die Teams
-- Variable Verteilung auf die Projekt-Teams, je nach Bedarf
 
 
 // TODO Bild von der Organisationsmatrix
@@ -125,39 +129,25 @@ Neuerungen und Änderungen an der GWT-Codebasis kommunizieren!
 // TODO Bild von einem Megaphon
 
 
-# Confluence
-- Wissen dauerhaft festhalten und pflegen.
-- Anleitungen, Best Practices, Guidelines ...
-
-// Bild von einem Eimer, in den Ideen fallen
-// Oder mehrerer Bahnen, die in eine Verlaufen und in den Eimer fallen
-
-// Auf dem Eimer könnte das Confluence-Logo stehen, wenn nicht zu kompliziert
-
-
 # Styleguide
 Jeder von uns kann und soll daran mitwirken!
 
 // TODO Bild von einem Heft wo "Styleguide" oder "Manual" drauf steht
 
 
+# Code Reviews
+
+Jeder review't jeden Code, so wie jetzt.
+
+(Unabhängig vom Projekt, an dem er arbeitet)
+
+// TODO Bild
+
+
 # Retrospektiven
-Kontinuierliche GWT-interne Verbesserung.
+Kontinuierliche Verbesserung, neben den Projekt-Retrospektiven.
 
 // TODO Bild vom continuous improvement cycle
-
-
-# Internal Unconferences
-"Nicht-Konferenz" aller GWT-Entwickler (und Interessierter)
-<blockquote>An unconference is like a normal conference but with no predefined agenda, no predefined list of speakers, no slides, and…er… actually it’s not very much like a normal conference at all! It’s more like an alternative to a conference. If the purpose of a conference is to collaborate and communicate, then an unconference will often fulfill the same purpose in a more simple, fun, and effective way!—Henrik Kniberg</blockquote>
-
-
-- Styleguide
-- Blog
-- Wiki
-- Code Reviews
-- Regelmäßige GWT-interne Retrospektive
-- Regelmäßige "Internal Unconferences"
 
 
 
@@ -217,3 +207,9 @@ Kontinuierliche GWT-interne Verbesserung.
 - Ein Post-It pro benötigtem UI-Entwickler
 - Board hängt neben dem GWT-Board. Übersicht bleibt erhalten!
 - Mehrbedarf? Hänge ein Post-It dazu!
+
+
+
+### Danke für eure Aufmerksamkeit.
+
+# Feedback?
