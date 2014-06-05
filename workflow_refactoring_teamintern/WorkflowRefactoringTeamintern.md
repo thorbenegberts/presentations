@@ -26,40 +26,69 @@
 
 
 
-# Pro & Contra
+# Cross-funktionale Teams
+<blockquote>Wir organisieren die Entwickler nicht mehr um Technologien, sondern um Projekte.</blockquote>
 
 
-## Pro
----
-#### Verantwortung ist klar
-- "End-to-End Responsibility"
-- Alles aus <u>einer</u> Hand: Modell-Planung & UI-Entwurf
----
-#### Vieles wird einfacher
-- Weniger Overhead für <u>Planung</u>
-- Weniger Overhead für <u>Kommunikation</u>
-- Schnelle <u>Entscheidungen</u></li>
-- Weniger <u>Fehler</u> und <u>Missverständnisse</u> bei Planung, Entwicklung & Test
-- Vereinfachung für QA & Support: <strike>"GWT oder PHP Bug?!"</strike> Feature XY Bug!
+![](GWTGildeNeuSmall.png)
 
 
-## Contra
----
-####Einheitlichkeit der UI muss erhalten bleiben, aber ...
-- Ich liefere einen <u>Styleguide</u>
-- Ich leiste gerne <u>Hilfe</u> bei den UI-Entwürfen.<br>Wichtig: Wir brauchen keine finalen Designs, sondern nur Mockups!
----
-####PHP-PLs werden mehr belastet, aber ...
-- Nicht jedes Projekt benötigt <u>wirklich</u> einen UI-Entwurf
-- Arbeit mit "Balsamiq Mockups" ist leicht erlernt und effizient
-- Ich stelle eine zusätzliche Widget-Library bereit!
----
-####Verteilung der UI-Ressourcen
-Hier liefere ich euch jetzt eine Lösung :-)
+## Weniger <u>Herumfragen</u> und <u>Suchen</u> nach Informationen.
+
+## <u>Direkte</u> Entscheidungen.
+
+
+## Mehr <u>Zusammenarbeit</u> zwischen PHP, GWT & Client.
+
+
+## Gemeinsam lernen durch projektbezogene, <u>teamübergreifende Retrospektiven</u>.
+
+
+## Nach und nach die Gräben zuschütten.
+
+## Weniger "die" und "wir", mehr "gemeinsam".
+
+![](TeamsInLoveSmall.png)
 
 
 
-# Wie verteilen wir die GWT-Entwickler auf die Projekt-Teams?
+# Was wird aus dem GWT-Team?
+
+
+## Ein neues Selbstverständnis
+![](GWTHipsterLogo2Small.png)
+# Die "GWT-Gilde"
+### Die Spezialisten ihres Handwerks
+
+
+# How to keep in touch?
+### Informationen, neue Funktionen, Code-Änderungen, Best Practices, Probleme, Verbesserungen, ...
+
+### usw.
+
+
+# Code Reviews
+
+<img src="CodeReviewSmall.png" height="500px"/>
+
+
+# Blog
+
+<img src="MegaphonSmall.png" height="500px"/>
+
+
+# Retrospektiven
+
+<img src="RetrospectiveSmall.png" height="500px"/>
+
+
+# Neu: Styleguide
+
+<img src="BookOfGWTSmall.png" height="500px"/>
+
+
+
+# Verteilung der GWT-Entwickler auf Projekte
 ## Eine "maritime Metapher"
 ### (weil ich Ostfriese bin)
 
@@ -109,100 +138,17 @@ Hier liefere ich euch jetzt eine Lösung :-)
 ![.](AnheuernBoardSmall.png)
 
 
-## Projekt-Post-It
+## Das Projekt-Post-It
 ![.](ProjectPostItSmall.png)
 
 - Ein Post-It pro benötigtem UI-Entwickler
+- Mehrbedarf? Projektleiter hängt ein Post-It dazu!
 - Board hängt neben dem GWT-Board. Übersicht bleibt erhalten!
-- Mehrbedarf? Hänge ein Post-It dazu!
-
-
-
-# Die "Transition"
-## Vieles bleibt beim Alten!
-- Alle PHP-Teams bleiben bestehen
-- Client-Team bleibt bestehen
-- GWT-Team bleibt bestehen
-- Keine personellen Veränderungen
-
-
-## <u>GWT-interne</u> Projekte und Tickets gibt es weiterhin
-GWT-Board & Workflow bleiben bestehen
-
-
-## Bei <u>teamübergreifenden</u> Projekten sieht das anders aus
-Hier ändert sich einiges ... zum Guten
-
-
-# Cross-funktionale Teams
-<blockquote>Wir organisieren die Entwickler nicht mehr um Technologien, sondern um Projekte.</blockquote>
-
-
-![](GWTGildeSmall.png)
-
-
-Weniger herumfragen nach Informationen.
-
-Direkte Entscheidungen.
-
-
-Mehr Zusammenarbeit zwischen PHP, GWT & Client.
-
-
-Gemeinsam lernen durch projektbezogene Retrospektiven.
-
-
-Nach und nach die Gräben zuschütten.
-
-Weniger "die" und "wir", mehr "gemeinsam".
-
-![](TeamsInLoveSmall.png)
-
-
-
-# Was wird aus dem guten alten GWT-Team?
-
-
-## Ein neues Selbstverständnis
-![](GWTHipsterLogo2Small.png)
-# Die "GWT-Gilde"
-### Die Spezialisten ihres Handwerks
-
-
-# How to keep in touch?
-Informationen, neue Funktionen, Code-Änderungen, Best Practices, Probleme, Verbesserungen, ...
-
-usw.
-
-
-# Blog
-Neuerungen und Änderungen an der GWT-Codebasis kommunizieren!
-
-// TODO Bild von einem Megaphon
-
-
-# Styleguide
-Jeder von uns kann und soll daran mitwirken!
-
-// TODO Bild von einem Heft wo "Styleguide" oder "Manual" drauf steht
-
-
-# Code Reviews
-
-Jeder review't jeden Code, so wie jetzt.
-
-(Unabhängig vom Projekt, an dem er arbeitet)
-
-// TODO Bild
-
-
-# Retrospektiven
-Kontinuierliche Verbesserung, neben den Projekt-Retrospektiven.
-
-// TODO Bild vom continuous improvement cycle
 
 
 
 ### Danke für eure Aufmerksamkeit.
 
+# Fragen?
+# Sorgen?
 # Feedback?
