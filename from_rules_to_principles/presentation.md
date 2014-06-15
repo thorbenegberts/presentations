@@ -8,7 +8,6 @@
 ## Rules vs. Principles
 
 
-
 <blockquote>
 Principles can be summed up in one word. Rules can't.
 </blockquote>
@@ -16,13 +15,11 @@ Principles can be summed up in one word. Rules can't.
 For instance a principle might be kindness. A rule is "Don't hit your sister." If there's a principle of treating each other kindly then there isn't a need for a rule that says "Don't hit." "Don't hit," only says "Don't hit." Kids do pick up that it doesn't say don't pinch, don't poke until she cries, don't pull hair ...
 
 
-
 <blockquote>
 Principles set goals. Rules can't.
 </blockquote>
 
 A set of rules can never be complete. There is no guarantee that the rules—no matter how distinct and complete they are—will guide us to achieve a certain goal. Rules center around themselves. In contrast principles set up _goals_. Heading towards a goal makes rules redundant and therefore _waste_.
-
 
 
 <blockquote>
