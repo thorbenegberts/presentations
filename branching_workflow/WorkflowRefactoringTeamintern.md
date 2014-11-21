@@ -103,6 +103,7 @@ Für alles, was eine *Beta-Phase* durchlaufen soll.
 > Was ist, wenn meine Entwicklung doch *direkt* in **stable** oder **beta** muss?
 
 Wenn **beta** nicht in den Branch gemerged worden ist, kann zurück in **stable** gemerged werden. Für **beta** ist das egal, da **beta** bereits alles von **stable** enthält.
+Wurde **beta** in den Branch gemerged und der Branch soll nun in **stable**, dann muss ein neuer Branch von **stable** abgezogen und die Änderungen dort hinein cherry-picked werden.
 
 
 > Kann es Konflikte beim Merge in **trainstation** geben?
