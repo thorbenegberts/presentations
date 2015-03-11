@@ -596,11 +596,13 @@ margin-top: 20px;
 }
 
 #readme {
+    text-align: center;
     font-size: 180px;
     width: 1400px;
 }
 
 #jenkins {
+    text-align: center;
     font-size: 180px;
     width: 1400px;
 }

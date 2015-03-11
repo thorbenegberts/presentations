@@ -4,19 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+
     <title>Github API und Ruby</title>
     
     <meta name="description" content="Github API und Ruby" />
-    <meta name="author" content="Bartek Szopka" />
-
-    <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />-->
-
-    <!--<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,700italic,300,300italic,400italic,100italic,100' rel='stylesheet' type='text/css'>-->
-    <!--<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:700' rel='stylesheet' type='text/css'>-->
+    <meta name="author" content="Thorben Egberts" />
 
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
 
-    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/impress.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -24,11 +20,6 @@
     <!-- Syntax Highlighting -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-
-    <!-- Carousel -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
 </head>
 
 <script>hljs.initHighlightingOnLoad();</script>
@@ -47,22 +38,6 @@
 
     <div id="overview" class="step" data-x="5000" data-y="2500" data-z="0" data-scale="50">
     </div>
-
-
-<!--
-    <div id="title" class="step" data-x="5000" data-y="2500" data-z="0" data-scale="50">
-        <p>Die <strong><a href="https://developer.github.com/v3/">Github API <img height="100px" src="img/octocat.png"/></a></strong> <br/>
-        mit <strong><a href="https://www.ruby-lang.org/">Ruby <img height="100px" src="img/ruby.png"/></a></strong> <strong><sup>*</sup></strong> <br/>
-        benutzen!</p>
-
-        <span class="footnote">* <a href="https://github.com/octokit/octokit.rb">Octokit.rb <img height="50px" src="img/octokit.png"/></a></span>
-    </div>
--->
-
-    <!-- ######### -->
-    <!-- Introduction Part -->
-    <!-- ######### -->
-
     
     <div id="problem" class="step" data-x="0" data-y="2000" data-rotate="-9" data-scale="25">
         <strong>Problemstellung:</strong><br>Mehrere Branches mergen, z.B.:
@@ -73,12 +48,6 @@
         ... und das <em>schnell</em> und <em>automatisierbar</em> !
         </p>
     </div>
-<!--
-    <div id="github_api" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="8">
-        <p>Die <b>Github API</b><img height="150px" src="img/octocat.png"/></p>
-    </div>
--->
-
 
     <div id="local_repo" class="step" data-x="5000" data-y="-11000" data-z="-5000" data-rotate="12" data-scale="15">
         <h1>Bisher: Lokales Repository</h1>
@@ -97,13 +66,7 @@ git push origin beta</code>
             </pre>
         </p>
     </div>
-<!--
-    <div id="use_the_source" class="step" data-x="30000" data-y="10000" data-z="-10000" data-rotate="600" data-scale="6">
-        <q>Use the source, Luke!</q>
-    </div>
--->
 
-    <!--<div id="useapi" class="step" data-x="30000" data-y="18000" data-z="-20000" data-rotate="180" data-rotate-x="-15" data-rotate-y="-45" data-scale="20">-->
     <div id="useapi" class="step" data-x="12000" data-y="9000" data-z="-5000" data-rotate="67" data-scale="15" data-rotate-x="0" data-rotate-y="-36">
         <img src="img/why.jpg" height="600px">
     </div>
@@ -130,7 +93,7 @@ git push origin beta</code>
             <ul style="list-style:disc;line-height:3">
                 <li>Kein zusätzlicher Speicherplatz notwendig</li>
                 <li>Sehr wenig Traffic</li>
-                <li>Keine Benutzername, Passwort oder SSH-Key nötig</li>
+                <li>Keine Benutzername, Passwort oder SSH-Key nötig (<a href="https://github.com/settings/applications"><img height="25px" src="img/link.png"> Token</a>)</li>
                 <li>Serverseitige Ausführung (wenig Hardwarelast)</li>
                 <li>Sehr schnell!</li>
             </ul>
@@ -289,8 +252,7 @@ user.login
 
 mergeOptions = {}
 
-if
-    commitMessage.length > 0
+unless commitMessage.empty?
     mergeOptions[:commit_message] = commitMessage
 end
 
@@ -345,8 +307,7 @@ raise "Repository name is missing" unless options.repo.length > 0
 
 raise "You have to specify at least one branch name" unless options.branches.count > 0
 
-options.branches.each {
-    |branchArgString|
+options.branches.each do |branchArgString|
     
     # Splitting branch parameter from "FROM:TO" to an array
     branchArgArray = branchArgString.split(/:/)
@@ -366,8 +327,7 @@ options.branches.each {
 
     mergeOptions = {}
 
-    if
-        commitMessage.length > 0
+    unless commitMessage.empty?
         mergeOptions[:commit_message] = commitMessage
     end
 
@@ -375,19 +335,19 @@ options.branches.each {
     
     puts "Merging branch '#{branchFrom}' to '#{branchTo}' ..."
     
-        client.merge( options.repo,
-                            branchTo,
-                            branchFrom,
-                            mergeOptions)
-})</code></pre>
+        client.merge(   options.repo,
+                        branchTo,
+                        branchFrom,
+                        mergeOptions)
+end</code></pre>
     </div>
 
     <div id="readme" class="step" data-x="14000" data-y="18000" data-z="-1000" data-rotate="27" data-scale="10">
-        <a href="https://github.com/thorbenegberts/github-api-merge-script">Readme<img height="220px" src="img/octocat.png"></a>
+        <a href="https://github.com/thorbenegberts/github-api-merge-script"><img height="160px" src="img/link.png"> Readme</a>
     </div>
 
     <div id="jenkins" class="step" data-x="-22000" data-y="5000" data-z="0" data-rotate="-59" data-scale="20">
-        <a href="http://217.24.219.7:9090/">Jenkins<img height="220px" src="img/jenkins.png"></a>
+        <a href="http://217.24.219.7:9090/">Jenkins <img height="160px" src="img/jenkins.png"></a>
     </div>
 
     <div id="links" class="step slide" data-x="-2000" data-y="16000"  data-z="0" data-rotate="10" data-scale="12">
@@ -400,409 +360,19 @@ options.branches.each {
 
 </div>
 
-<!--
-    
-    Hint is not related to impress.js in any way.
-    
-    But it can show you how to use impress.js features in creative way.
-    
-    When the presentation step is shown (selected) its element gets the class of "active" and the body element
-    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
-    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
-    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
-    
-    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
-    the first step of presentation is visible for a couple of seconds.
-    
-    ...
-    
-    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
-    It's just a quick and dirty workaround to get different hint text for touch devices.
-    In a real world it should be at least placed in separate JS file ... and the touch content should be
-    probably just hidden somewhere in HTML - not hard-coded in the script.
-    
-    Just sayin' ;)
-    
--->
 <div class="hint">
     <p>Use a spacebar or arrow keys to navigate</p>
 </div>
+
 <script>
 if ("ontouchstart" in document.documentElement) { 
     document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
 }
 </script>
 
-<!--
-    
-    Last, but not least.
-    
-    To make all described above really work, you need to include impress.js in the page.
-    I strongly encourage to minify it first.
-    
-    In here I just include full source of the script to make it more readable.
-    
-    You also need to call a `impress().init()` function to initialize impress.js presentation.
-    And you should do it in the end of your document. Not only because it's a good practice, but also
-    because it should be done when the whole document is ready.
-    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
-    
--->
 <script src="js/impress.js"></script>
-<script>impress().init();</script>
 
-<!--
-    
-    The `impress()` function also gives you access to the API that controls the presentation.
-    
-    Just store the result of the call:
-    
-        var api = impress();
-    
-    and you will get three functions you can call:
-    
-        `api.init()` - initializes the presentation,
-        `api.next()` - moves to next step of the presentation,
-        `api.prev()` - moves to previous step of the presentation,
-        `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
-                id or the DOM element; second parameter can be used to define duration of the transition in ms,
-                but it's optional - if not provided default transition duration for the presentation will be used.
-    
-    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
-    Don't worry, it wont initialize the presentation again.
-    
-    For some example uses of this API check the last part of the source of impress.js where the API
-    is used in event handlers.
-    
--->
+<script>impress().init();</script>
 
 </body>
 </html>
-
-<!--
-    
-    Now you know more or less everything you need to build your first impress.js presentation, but before
-    you start...
-    
-    Oh, you've already cloned the code from GitHub?
-    
-    You have it open in text editor?
-    
-    Stop right there!
-    
-    That's not how you create awesome presentations. This is only a code. Implementation of the idea that
-    first needs to grow in your mind.
-    
-    So if you want to build great presentation take a pencil and piece of paper. And turn off the computer.
-    
-    Sketch, draw and write. Brainstorm your ideas on a paper. Try to build a mind-map of what you'd like
-    to present. It will get you closer and closer to the layout you'll build later with impress.js.
-    
-    Get back to the code only when you have your presentation ready on a paper. It doesn't make sense to do
-    it earlier, because you'll only waste your time fighting with positioning of useless points.
-    
-    If you think I'm crazy, please put your hands on a book called "Presentation Zen". It's all about 
-    creating awesome and engaging presentations.
-    
-    Think about it. 'Cause impress.js may not help you, if you have nothing interesting to say.
-    
--->
-
-<!--
-    
-    Are you still reading this?
-    
-    For real?
-    
-    I'm impressed! Feel free to let me know that you got that far (I'm @bartaz on Twitter), 'cause I'd like
-    to congratulate you personally :)
-    
-    But you don't have to do it now. Take my advice and take some time off. Make yourself a cup of coffee, tea,
-    or anything you like to drink. And raise a glass for me ;)
-    
-    Cheers!
-    
--->
-
-<!--
-    <div id="api_overview" class="step" data-x="24500" data-y="-9500" data-z="-20000" data-rotate="-180" data-scale="3" data-rotate-x="0" data-rotate-y="30" >
-        <p>
-            <a href="https://developer.github.com/v3/">https://developer.github.com/v3/</a>
-        </p>
-        <div class="func">
-            <div class="single">List public events</div>
-            <div class="single">List repository events</div>
-            <div class="single">List issue events for a repository</div>
-            <div class="single">List public events for a network of repositories</div>
-            <div class="single">List public events for an organization</div>
-            <div class="single">List events that a user has received</div>
-            <div class="single">List public events that a user has received</div>
-            <div class="single">List events performed by a user</div>
-            <div class="single">List public events performed by a user</div>
-            <div class="single">List events for an organization</div>
-            <div class="single">Timeline: The GitHub global public timeline</div>
-            <div class="single">User: The public timeline for any user, using URI template</div>
-            <div class="single">Current user public: The public timeline for the authenticated user</div>
-            <div class="single">Current user: The private timeline for the authenticated user</div>
-            <div class="single">Current user actor: The private timeline for activity created by the authenticated user</div>
-            <div class="single">Current user organizations: The private timeline for the organizations the authenticated user is a member of.</div>
-            <div class="single">Notification Reasons</div>
-            <div class="single">List your notifications</div>
-            <div class="single">List your notifications in a repository</div>
-            <div class="single">Mark as read</div>
-            <div class="single">Mark notifications as read in a repository</div>
-            <div class="single">View a single thread</div>
-            <div class="single">Mark a thread as read</div>
-            <div class="single">Get a Thread Subscription</div>
-            <div class="single">Set a Thread Subscription</div>
-            <div class="single">Delete a Thread Subscription</div>
-            <div class="single">List Stargazers</div>
-            <div class="single">List repositories being starred</div>
-            <div class="single">List repositories being starred with star creation timestamps</div>
-            <div class="single">Check if you are starring a repository</div>
-            <div class="single">Star a repository</div>
-            <div class="single">Unstar a repository</div>
-            <div class="single">List watchers</div>
-            <div class="single">List repositories being watched</div>
-            <div class="single">Get a Repository Subscription</div>
-            <div class="single">Set a Repository Subscription</div>
-            <div class="single">Delete a Repository Subscription</div>
-            <div class="single">Get a Blob</div>
-            <div class="single">Create a Blob</div>
-            <div class="single">Custom media types</div>
-            <div class="single">Get a Commit</div>
-            <div class="single">Create a Commit</div>
-            <div class="single">Get a Reference</div>
-            <div class="single">Get all References</div>
-            <div class="single">Create a Reference</div>
-            <div class="single">Update a Reference</div>
-            <div class="single">Delete a Reference</div>
-            <div class="single">Get a Tag</div>
-            <div class="single">Create a Tag Object</div>
-            <div class="single">Get a Tree</div>
-            <div class="single">Get a Tree Recursively</div>
-            <div class="single">Create a Tree</div>
-            <div class="single">List issue assignees</div>
-            <div class="single">Check issue assignee</div>
-            <div class="single">List comments on an issue</div>
-            <div class="single">List comments in a repository</div>
-            <div class="single">Get a single comment</div>
-            <div class="single">Create a comment</div>
-            <div class="single">Edit a comment</div>
-            <div class="single">Delete a comment</div>
-            <div class="single">Custom media types</div>
-            <div class="single">List events for an issue</div>
-            <div class="single">List events for a repository</div>
-            <div class="single">Get a single event</div>
-            <div class="single">List all labels for this repository</div>
-            <div class="single">Get a single label</div>
-            <div class="single">Create a label</div>
-            <div class="single">Update a label</div>
-            <div class="single">Delete a label</div>
-            <div class="single">List labels on an issue</div>
-            <div class="single">Add labels to an issue</div>
-            <div class="single">Remove a label from an issue</div>
-            <div class="single">Replace all labels for an issue</div>
-            <div class="single">Remove all labels from an issue</div>
-            <div class="single">Get labels for every issue in a milestone</div>
-            <div class="single">List milestones for a repository</div>
-            <div class="single">Get a single milestone</div>
-            <div class="single">Create a milestone</div>
-            <div class="single">Update a milestone</div>
-            <div class="single">Delete a milestone</div>
-            <div class="single">Emojis</div>
-            <div class="single">Gitignore: Listing available templates</div>
-            <div class="single">Gitignore: Get a single template</div>
-            <div class="single">Render an arbitrary Markdown document</div>
-            <div class="single">Render a Markdown document in raw mode</div>
-            <div class="single">Get your current rate limit status</div>
-            <div class="single">List your organizations</div>
-            <div class="single">List user organizations</div>
-            <div class="single">Get an organization</div>
-            <div class="single">Edit an organization</div>
-            <div class="single">Members list</div>
-            <div class="single">Check membership</div>
-            <div class="single">Add a member</div>
-            <div class="single">Remove a member</div>
-            <div class="single">Public members list</div>
-            <div class="single">Check public membership</div>
-            <div class="single">Publicize a user’s membership</div>
-            <div class="single">Conceal a user’s membership</div>
-            <div class="single">Get organization membership</div>
-            <div class="single">Add or update organization membership</div>
-            <div class="single">Remove organization membership</div>
-            <div class="single">List your organization memberships</div>
-            <div class="single">Get your organization membership</div>
-            <div class="single">Edit your organization membership</div>
-            <div class="single">List teams</div>
-            <div class="single">Get team</div>
-            <div class="single">Create team</div>
-            <div class="single">Edit team</div>
-            <div class="single">Delete team</div>
-            <div class="single">List team members</div>
-            <div class="single">Get team member</div>
-            <div class="single">Add team member</div>
-            <div class="single">Remove team member</div>
-            <div class="single">Get team membership</div>
-            <div class="single">Add team membership</div>
-            <div class="single">Remove team membership</div>
-            <div class="single">List team repos</div>
-            <div class="single">Check if a team manages a repository</div>
-            <div class="single">Add team repository</div>
-            <div class="single">Remove team repository</div>
-            <div class="single">List user teams</div>
-            <div class="single">Scopes & Restrictions</div>
-            <div class="single">List hooks</div>
-            <div class="single">Get single hook</div>
-            <div class="single">Create a hook</div>
-            <div class="single">Edit a hook</div>
-            <div class="single">Ping a hook</div>
-            <div class="single">Delete a hook</div>
-            <div class="single">Receiving Webhooks</div>
-            <div class="single">Pull Requests: Link Relations</div>
-            <div class="single">List pull requests</div>
-            <div class="single">Get a single pull request</div>
-            <div class="single">Create a pull request</div>
-            <div class="single">Update a pull request</div>
-            <div class="single">List commits on a pull request</div>
-            <div class="single">List pull requests files</div>
-            <div class="single">Get if a pull request has been merged</div>
-            <div class="single">Merge a pull request (Merge Button)</div>
-            <div class="single">Custom media types</div>
-            <div class="single">List comments on a pull request</div>
-            <div class="single">List comments in a repository</div>
-            <div class="single">Get a single comment</div>
-            <div class="single">Create a comment</div>
-            <div class="single">Edit a comment</div>
-            <div class="single">Delete a comment</div>
-            <div class="single">Custom media types</div>
-            <div class="single">List your repositories</div>
-            <div class="single">List user repositories</div>
-            <div class="single">List organization repositories</div>
-            <div class="single">List all public repositories</div>
-            <div class="single">Create Repository</div>
-            <div class="single">Get Repositories</div>
-            <div class="single">Edit Repository</div>
-            <div class="single">List contributors</div>
-            <div class="single">List languages</div>
-            <div class="single">List Teams</div>
-            <div class="single">List Tags</div>
-            <div class="single">List Branches</div>
-            <div class="single">Get Branch</div>
-            <div class="single">Delete a Repository</div>
-            <div class="single">List collaborators</div>
-            <div class="single">Check if a user is a collaborator</div>
-            <div class="single">Add user as a collaborator</div>
-            <div class="single">Remove user as a collaborator</div>
-            <div class="single">List commit comments for a repository</div>
-            <div class="single">List comments for a single commit</div>
-            <div class="single">Create a commit comment</div>
-            <div class="single">Get a single commit comment</div>
-            <div class="single">Update a commit comment</div>
-            <div class="single">Delete a commit comment</div>
-            <div class="single">Custom media types</div>
-            <div class="single">List commits on a repository</div>
-            <div class="single">Get a single commit</div>
-            <div class="single">Compare two commits</div>
-            <div class="single">Get the README</div>
-            <div class="single">Get contents</div>
-            <div class="single">Create a file</div>
-            <div class="single">Update a file</div>
-            <div class="single">Delete a file</div>
-            <div class="single">Get archive link</div>
-            <div class="single">Custom media types</div>
-            <div class="single">List deploy keys</div>
-            <div class="single">Get a deploy key</div>
-            <div class="single">Add a new deploy key</div>
-            <div class="single">Edit a deploy key</div>
-            <div class="single">Remove a deploy key</div>
-            <div class="single">List Deployments</div>
-            <div class="single">Create a Deployment</div>
-            <div class="single">Update a Deployment</div>
-            <div class="single">List Deployment Statuses</div>
-            <div class="single">Create a Deployment Status</div>
-            <div class="single">List downloads for a repository</div>
-            <div class="single">Get a single download</div>
-            <div class="single">Delete a download</div>
-            <div class="single">List forks</div>
-            <div class="single">Create a fork</div>
-            <div class="single">List hooks</div>
-            <div class="single">Get single hook</div>
-            <div class="single">Create a hook</div>
-            <div class="single">Edit a hook</div>
-            <div class="single">Test a push hook</div>
-            <div class="single">Ping a hook</div>
-            <div class="single">Delete a hook</div>
-            <div class="single">Receiving Webhooks</div>
-            <div class="single">Perform a merge</div>
-            <div class="single">Get information about a Pages site</div>
-            <div class="single">List Pages builds</div>
-            <div class="single">List latest Pages build</div>
-            <div class="single">List releases for a repository</div>
-            <div class="single">Get a single release</div>
-            <div class="single">Get the latest release</div>
-            <div class="single">Get a release by tag name</div>
-            <div class="single">Create a release</div>
-            <div class="single">Edit a release</div>
-            <div class="single">Delete a release</div>
-            <div class="single">List assets for a release</div>
-            <div class="single">Upload a release asset</div>
-            <div class="single">Get a single release asset</div>
-            <div class="single">Edit a release asset</div>
-            <div class="single">Delete a release asset</div>
-            <div class="single">Get contributors list with additions, deletions, and commit counts</div>
-            <div class="single">Get the last year of commit activity data</div>
-            <div class="single">Get the number of additions and deletions per week</div>
-            <div class="single">Get the weekly commit count for the repository owner and everyone else</div>
-            <div class="single">Get the number of commits per hour in each day</div>
-            <div class="single">Create a Status</div>
-            <div class="single">List Statuses for a specific Ref</div>
-            <div class="single">Get the combined Status for a specific Ref</div>
-            <div class="single">Search repositories</div>
-            <div class="single">Search code</div>
-            <div class="single">Search issues</div>
-            <div class="single">Search users</div>
-            <div class="single">Text match metadata</div>
-            <div class="single">Search repositories</div>
-            <div class="single">Search code</div>
-            <div class="single">Search issues</div>
-            <div class="single">Search users</div>
-            <div class="single">Get a single user</div>
-            <div class="single">Get the authenticated user</div>
-            <div class="single">Update the authenticated user</div>
-            <div class="single">Get all users</div>
-            <div class="single">List email addresses for a user</div>
-            <div class="single">Add email address(es)</div>
-            <div class="single">Delete email address(es)</div>
-            <div class="single">List followers of a user</div>
-            <div class="single">List users followed by another user</div>
-            <div class="single">Check if you are following a user</div>
-            <div class="single">Check if one user follows another</div>
-            <div class="single">Follow a user</div>
-            <div class="single">Unfollow a user</div>
-            <div class="single">List public keys for a user</div>
-            <div class="single">List your public keys</div>
-            <div class="single">Get a single public key</div>
-            <div class="single">Create a public key</div>
-            <div class="single">Update a public key</div>
-            <div class="single">Delete a public key</div>
-            <div class="single">Promote an ordinary user to a site administrator</div>
-            <div class="single">Demote a site administrator to an ordinary user</div>
-            <div class="single">Suspend a user</div>
-            <div class="single">Unsuspend a user</div>
-        </div>
-    </div>
-
-    <script>
-    $($('.func').slick({
-          slidesToShow: 13,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 100,
-          //adaptiveHeight: true
-            arrows: false,
-            vertical: true
-        }));
-    </script>
--->
-
