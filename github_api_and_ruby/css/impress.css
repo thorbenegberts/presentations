@@ -232,7 +232,7 @@ body     { pointer-events: none; }
     background-repeat: no-repeat;*/
 }
 
-#problem::after {
+/*#problem::after {
     content: "";
     background-image: url(../img/merge_sign.png);
     background-position: bottom right;
@@ -245,7 +245,7 @@ body     { pointer-events: none; }
     right: 0;
     position: absolute;
     z-index: -1;   
-}
+}*/
 
 #use_the_source {
     padding-bottom: 300px;
